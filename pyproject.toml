@@ -1,0 +1,14 @@
+[project]
+name = "myagenticai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=1.5.4",
+    "anthropic>=0.52.0",
+    "connectionvault>=2.0.1",
+    "openai>=1.82.0",
+    "pyyaml>=6.0.2",
+    "yfinance>=0.2.61",
+]
