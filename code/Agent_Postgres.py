@@ -1,3 +1,7 @@
+## This does not work as uses OPEN AI API
+
+
+
 #################################################################
 # Connection Vault Part
 

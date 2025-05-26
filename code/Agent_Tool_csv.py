@@ -1,3 +1,6 @@
+## This does not work as uses OPEN AI API
+
+
 import httpx
 from pathlib import Path
 from agno.agent import Agent

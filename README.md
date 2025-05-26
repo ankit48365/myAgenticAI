@@ -1,3 +1,5 @@
+![CurrentLocal](https://img.shields.io/badge/machine-Latitude E5570-brightgreen)
+
 # myAgenticAI
 
 ### Web Site
