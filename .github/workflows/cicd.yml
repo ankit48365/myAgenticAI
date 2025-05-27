@@ -25,13 +25,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies from pyproject.toml
+      - name: Install dependencies for testing & linting
         run: |
-          pip install pipx
-          pipx run pip install -e .
+          pip install --upgrade pip
+          pip install pytest pytest-pylint pytest-cov yfinance
+
       
-      - name: Run pytest
-        run: pytest ./test/test_yfinance.py
+      # - name: Run pytest
+      #   run: pytest ./test/test_yfinance.py
 
       - name: Run pylint
         run: pytest ./test/test_yfinance.py --pylint
