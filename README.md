@@ -1,4 +1,4 @@
-![CurrentLocal](https://img.shields.io/badge/machine-Latitude E5570-brightgreen)
+![CurrentLocal](https://img.shields.io/badge/machine-Latitude E5570-brightgreen) ![Coverage](./image/coverage.svg)
 
 # myAgenticAI
 

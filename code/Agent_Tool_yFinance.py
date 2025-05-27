@@ -17,6 +17,6 @@ agent = Agent(
     ],
     markdown=True,
 )
-agent.print_response("What is the stock price of Apple and Samsung?", stream=True)
+agent.print_response("What is the stock price of Apple?", stream=True)
 
 # agent.print_response("What was the stock price of Apple yesterday?", stream=True)

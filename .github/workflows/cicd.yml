@@ -1,0 +1,37 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - 1-basicsetup
+  pull_request:
+    branches:
+        - main
+
+
+jobs:
+  cicd-run:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code  # ensures the workflow has access to the project files.
+        uses: actions/checkout@v4
+
+
+      - name: Set up Python # ensures that the required Python environment is available for running dependencies.
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies from pyproject.toml
+        run: |
+          pip install pipx
+          pipx run pip install -e .
+      
+      - name: Run pytest
+        run: pytest ./test/test_yfinance.py
+
+      - name: Run pylint
+        run: pytest ./test/test_yfinance.py --pylint

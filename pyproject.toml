@@ -8,7 +8,12 @@ dependencies = [
     "agno>=1.5.4",
     "anthropic>=0.52.0",
     "connectionvault>=2.0.1",
+    "coverage-badge>=1.1.2",
     "openai>=1.82.0",
+    "pylint>=3.3.7",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+    "pytest-pylint>=0.21.0",
     "pyyaml>=6.0.2",
     "yfinance>=0.2.61",
 ]
